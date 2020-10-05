@@ -1,3 +1,5 @@
+/// Problem link: codeforces.com/contest/1426/problem/A
+
 #include <bits/stdc++.h>
 #define ll long long int
 #define pii pair <int,int>
@@ -43,6 +45,11 @@ template < class T > inline T bigmod(T p, T e, T M){
 int main()
 {
     //freopen("in.txt", "r", stdin);
-
+    int t = nxt();
+    while (t--) {
+        int n = nxt(), x = nxt();
+        if (n <= 2) cout << 1 << endl;
+        else cout << (n-3)/x + 2 << endl;
+    }
     return 0;
 }
